@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #073775;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display:flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 12px 20px;
+  color: rgb(236, 227, 227);
+  height: 60px;
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Убираем маркеры и выравниваем */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #073775;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav li a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.nav li a:hover {
+  background-color: #022e6d;
+  border-radius: 5px;
+}
+
+/* Выпадающее меню */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #073775;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.dropdown-menu li a {
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}
+
+
+
+
+
+
+.news-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.news-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.news-item {
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.news-item img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.news-content h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.news-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+
+
+
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #061336;
+  color: #fff;
+  padding: 30px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.footer-info p {
+  margin-top: 5px;
+  color: #ccc;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-photo img {
+  width: 60px;  /* Размер фото */
+  height: 60px;
+  border-radius: 50%;  /* Округляем фото */
+  object-fit: cover;  /* Обрезаем фото по форме круга */
+  cursor: pointer;
+  left: -30px;  /* Расстояние от левого края */
+  top: 30px;  /* Расстояние от верхнего края */
+}
+
+.burger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Если нужно, чтобы фото было в правой части */
+.nav-container {
+  position: relative;
+}
+
+.profile-photo {
+  position: absolute;
+  right: 40px;  /* Расстояние от правого края */
+  left: auto;  /* Расстояние от левого края */
+  top: 30px;  
+}
+
+
+#news {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#news h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-item {
+  background-color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+  font-size: 1.5em;
+}
+
+.news-item p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.news-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
